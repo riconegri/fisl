@@ -1,0 +1,20 @@
+<h4>Galeria</h4>
+<div class="slider">
+    <carousel interval="myInterval">
+        <slide ng-repeat="slide in slides" active="slide.active">
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <div class="carousel-caption">
+                <h4>Slide {{$index}}</h4>
+                <p>{{slide.text}}</p>
+            </div>
+        </slide>
+    </carousel>
+    <div class="row-fluid">
+        <div class="span6">
+            <a class="btn" ng-click="addSlide()">Add Slide</a>
+        </div>
+        <div class="span6">
+            Intervalo: <input class="input-small" type="number" ng-model="myInterval">
+        </div>
+    </div>
+</div>

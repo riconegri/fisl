@@ -1,0 +1,8 @@
+<h4>Esportes</h4>
+<accordion close-others="true">
+    <accordion-group data-ng-repeat="item in esportes" heading="{{ item.description }}">
+        <div data-ng-repeat="oitem in item.item">
+            <a href="{{ oitem.link }}">{{ oitem.title }}</a>
+        </div>
+    </accordion-group>
+</accordion>

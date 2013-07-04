@@ -1,0 +1,72 @@
+<div class="span4">
+    <table class="table span6">
+        <tbody>
+        <tr data-ng-repeat="e in blocks">
+            <td>{{ e.nome }}</td>
+            <td>
+                <button class="btn btn-success btn-mini" data-ng-click="obj.layout.esquerda.push( e );"><i class="icon icon-plus icon-white"></i></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table span6">
+        <tbody>
+        <tr data-ng-repeat="z in obj.layout.esquerda">
+            <td>{{ z.nome }}</td>
+            <td>
+                <button class="btn btn-danger btn-mini" data-ng-click="obj.layout.esquerda.splice( $index, 1 );">
+                    <i class="icon icon-minus icon-white"></i>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="span4">
+    <table class="table span6">
+        <tbody>
+        <tr data-ng-repeat="e in blocks">
+            <td>{{ e.nome }}</td>
+            <td>
+                <button class="btn btn-success btn-mini" data-ng-click="obj.layout.centro.push( e );"><i class="icon icon-plus icon-white"></i></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table span6">
+        <tbody>
+        <tr data-ng-repeat="z in obj.layout.centro">
+            <td>{{ z.nome }}</td>
+            <td>
+                <button class="btn btn-danger btn-mini" data-ng-click="obj.layout.centro.splice( $index, 1 );">
+                    <i class="icon icon-minus icon-white"></i>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="span4">
+    <table class="table span6">
+        <tbody>
+        <tr data-ng-repeat="e in blocks">
+            <td>{{ e.nome }}</td>
+            <td>
+                <button class="btn btn-success btn-mini" data-ng-click="obj.layout.direita.push( e );"><i class="icon icon-plus icon-white"></i></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table span6">
+        <tbody>
+        <tr data-ng-repeat="z in obj.layout.direita">
+            <td>{{ z.nome }}</td>
+            <td>
+                <button class="btn btn-danger btn-mini" data-ng-click="obj.layout.direita.splice( $index, 1 );">
+                    <i class="icon icon-minus icon-white"></i>
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

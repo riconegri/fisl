@@ -1,0 +1,31 @@
+<h4>Cidades e Datas
+    <button class="btn btn-success" data-ng-hide="com.formshow" data-ng-click="com.formshow=1"><i class="icon-white icon-plus"></i></button>
+</h4>
+<form data-ng-show="com.formshow" class="hero-unit">
+    <dl>
+        <dt>Cidade: <input class="input-mini" data-ng-model="om.cidade" placeholder="Cidade"/></dt>
+        <dt>Estado: <input class="input-mini" data-ng-model="om.estado" placeholder="Estado"/></dt>
+        <dt>De: <input class="input-mini" data-ng-model="om.de" placeholder="De"/></dt>
+        <dt>
+            Até: <input class="input-small" data-ng-model="om.ate" placeholder="Até"/>
+            <button class="btn btn-success" data-ng-click="obj.morou_em.push( om );om={};com.formshow=0"><i class="icon-plus icon-white"></i></button>
+            <button class="btn btn-danger" data-ng-click="om={};com.formshow=0"><i class="icon-eye-close icon-white"></i></button>
+        </dt>
+    </dl>
+</form>
+<table class="table table-striped table-hover">
+    <thead>
+    <tr>
+        <th>Cidade</th>
+        <th>De</th>
+        <th>Até</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-ng-repeat="item in obj.morou_em">
+        <td>{{ item.cidade }}/{{ item.estado }}</td>
+        <td>{{ item.de|date:'dd/MM/yy' }}</td>
+        <td>{{ item.ate|date:'dd/MM/yy' }}</td>
+    </tr>
+    </tbody>
+</table>

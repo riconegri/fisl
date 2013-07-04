@@ -1,0 +1,44 @@
+{
+    "channel": {
+        "title": "Sport Club Internacional",
+        "link": "http://www.internacional.com.br",
+        "description": "Notícias do Inter",
+        "item": [
+            {
+                "title": "Torcedora de 74 anos realiza sonho de conhecer Dunga",
+                "link": "http://www.internacional.com.br/view.php?page=20710",
+                "guid": "http://www.internacional.com.br/view.php?page=20710",
+                "description": [],
+                "pubDate": "2013-06-29"
+            },
+            {
+                "title": "Beira-Rio se aprontando para receber as novas cadeiras",
+                "link": "http://www.internacional.com.br/view.php?page=20709",
+                "guid": "http://www.internacional.com.br/view.php?page=20709",
+                "description": [],
+                "pubDate": "2013-06-29"
+            },
+            {
+                "title": "CAS não funcionará nesta segunda-feira",
+                "link": "http://www.internacional.com.br/view.php?page=20708",
+                "guid": "http://www.internacional.com.br/view.php?page=20708",
+                "description": [],
+                "pubDate": "2013-06-28"
+            },
+            {
+                "title": "Inter visita o Centro Social Padre Pedro Leonardi",
+                "link": "http://www.internacional.com.br/view.php?page=20707",
+                "guid": "http://www.internacional.com.br/view.php?page=20707",
+                "description": [],
+                "pubDate": "2013-06-28"
+            },
+            {
+                "title": "Inter presente na comemoração dos 19 anos do 21º BPM",
+                "link": "http://www.internacional.com.br/view.php?page=20706",
+                "guid": "http://www.internacional.com.br/view.php?page=20706",
+                "description": [],
+                "pubDate": "2013-06-28"
+            }
+        ]
+    }
+}

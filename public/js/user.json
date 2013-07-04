@@ -1,0 +1,182 @@
+{
+    "user": "usernew",
+    "nome": "Artensis Plovsck",
+    "email": ["artsis@gmail.com", "aloha@heaven.com", "plov@ironice.com"],
+    "nascimento": "1971-07-05",
+    "cidade_natal": "Caxias do Sul",
+    "layout": {
+        "esquerda": [
+            {"nome": "Meus dados", "file": "meus-dados.html", "order": 1},
+            {"nome": "Esportes", "file": "esportes.html", "order": 2},
+            {"nome": "Cidades e datas", "file": "onde-morei.html", "order": 3}
+        ],
+        "centro": [
+            {"nome": "Galeria", "file": "galeria.html", "order": 3}
+        ],
+        "direita": [
+            {"nome": "Minhas Compras", "file": "minhas-compras.html", "order": 3},
+            {"nome": "Meus Vídeos", "file": "meus-videos.html", "order": 3}
+        ]
+    },
+    "enderecos": [
+        {
+            "nome": "residencial",
+            "rua": "R. Botafogo, 734",
+            "bairro": "Menino Deus",
+            "cidade": "Porto Alegre",
+            "estado": "RS",
+            "cep": "90150-052"
+        },
+        {
+            "nome": "comercial",
+            "rua": "Av. Getúlio Vargas, 123",
+            "bairro": "Centro",
+            "cidade": "Porto Alegre",
+            "estado": "RS",
+            "cep": "90050-025"
+        }
+    ],
+    "morou_em": [
+        {"cidade": "São Paulo", "estado":"SP", "de": "2004-06-15","ate": "2006-03-01"},
+        {"cidade":"Recife", "estado":"PE", "de": "2006-03-01","ate": "2009-03-01"},
+        {"cidade":"Florianópolis", "estado":"SC", "de": "2009-03-01","ate": "2010-05-03"},
+        {"cidade":"Porto Alegre", "estado":"RS", "de": "2010-06-15","ate": "2012-01-01"}
+    ],
+    "esportes": [
+        {
+            "nome": "Futebol",
+            "equipe_preferidas": [
+                {
+                    "nome": "Internacional",
+                    "cidade": "Porto Alegre",
+                    "noticias": "inter.json"
+                },
+                {
+                    "nome": "Grêmio",
+                    "cidade": "Porto Alegre",
+                    "noticias": "gremio.json"
+                }
+            ]
+        }
+    ],
+    "minhas_compras": [
+        {
+            "tipo": "Online",
+            "compras": [
+                {
+                    "criado_em": "2013-03-09",
+                    "endereco": "residencial",
+                    "loja": "Loja de Instrumentos Musicais",
+                    "total": 288.00,
+                    "rating":6,
+                    "forma_pagamento": "paypal",
+                    "items": [
+                        {
+                            "nome": "Palheta profissional",
+                            "quantidade": 3,
+                            "unidade": "pç",
+                            "valor_unitario": 46.00,
+                            "imposto": 6.00
+                        },
+                        {
+                            "nome": "Jogo de corda de aço suiço",
+                            "quantidade": 2,
+                            "unidade": "jogo",
+                            "valor_unitario": 75.00,
+                            "imposto": 21.00
+                        }
+                    ]
+                },
+                {
+                    "criado_em": "2013-04-02",
+                    "endereco": "comercial",
+                    "loja": "PetShop Amigos",
+                    "total": 61.00,
+                    "rating":10,
+                    "forma_pagamento": "visa",
+                    "items": [
+                        {
+                            "nome": "Ração Extra forte",
+                            "quantidade": 3,
+                            "unidade": "kg",
+                            "valor_unitario": 12.00,
+                            "imposto": 1.50
+                        },
+                        {
+                            "nome": "Colar Elisabetano",
+                            "quantidade": 1,
+                            "unidade": "jogo",
+                            "valor_unitario": 25.00,
+                            "imposto": 7.30
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tipo": "Física",
+            "compras": [
+                {
+                    "criado_em": "2013-06-09",
+                    "endereco": "comercial",
+                    "loja": "Games Panta",
+                    "rating": 8,
+                    "total": 322.00,
+                    "forma_pagamento": "visa",
+                    "items": [
+                        {
+                            "nome": "X Factor",
+                            "quantidade": 1,
+                            "unidade": "pç",
+                            "valor_unitario": 254.00,
+                            "imposto": 69.00
+                        },
+                        {
+                            "nome": "Fone Fala Alto",
+                            "quantidade": 1,
+                            "unidade": "pç",
+                            "valor_unitario": 78.00,
+                            "imposto": 10.00
+                        }
+                    ]
+                },
+                {
+                    "criado_em": "2013-06-09",
+                    "loja": "Dona D",
+                    "rating":9,
+                    "endereco": "residencial",
+                    "total": 24.00,
+                    "forma_pagamento": "dinheiro",
+                    "items": [
+                        {
+                            "nome": "Ervas aromáticas",
+                            "quantidade": 1,
+                            "unidade": "molho",
+                            "valor_unitario": 6.00,
+                            "imposto": 1.00
+                        },
+                        {
+                            "nome": "Arroz integral",
+                            "unidade": "kg",
+                            "quantidade": 2,
+                            "valor_unitario": 9.00,
+                            "imposto": 0.75
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ],
+    "meus_videos": [
+        { "id": "FGViL3CYRwg", "rating":5, "tags":["cool", "funny", "pet"] },
+        {"id":"_OBlgSz8sSM","ratings":8,"tags":["bom","legal","maneiro"]},
+        {"id":"dMH0bHeiRNg","ratings":6,"tags":["bom","legal","maneiro"]},
+        {"id":"kffacxfA7G4","ratings":8,"tags":["bom","legal","maneiro"]},
+        {"id":"1uwOL4rB-go","ratings":5,"tags":["bom","legal","maneiro"]},
+        {"id":"7AVHXe-ol-s","ratings":8,"tags":["bom","legal","maneiro"]},
+        {"id":"4JipHEz53sU","ratings":8,"tags":["bom","legal","maneiro"]},
+        {"id":"Hr0Wv5DJhuk","ratings":5,"tags":["bom","legal","maneiro"]},
+        {"id":"astISOttCQ0","ratings":9,"tags":["bom","legal","maneiro"]}
+    ]
+}

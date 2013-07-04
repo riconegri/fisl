@@ -1,0 +1,13 @@
+<h4>Meus Vídeos</h4>
+<img data-ng-show="$index<6" class="span3" data-ng-click="open( itm );" data-ng-repeat="itm in videos" src="http://i1.ytimg.com/vi/{{itm}}/default.jpg" alt=""/>
+<div modal="shouldBeOpen" close="close()" options="opts">
+    <h4>Video do Youtube!</h4>
+    <div class="modal-body">
+        <div class="row" style="text-align: center;">
+            <img src="http://img.youtube.com/vi/{{ player }}/hqdefault.jpg" alt=""/>
+        </div>
+        <div class="row">
+            <img class="span1" style="height: 50" data-ng-click="open( itm );" data-ng-repeat="itm in videos" src="http://i1.ytimg.com/vi/{{itm}}/default.jpg" alt=""/>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<h4>Meus dados
+    <button class="btn btn-inverse" data-ng-click="md.show=1"><i class="icon-eye-open icon-white"></i></button>
+    <button class="btn btn-success"data-ng-click="md.edit=1"><i class="icon-edit icon-white"></i></button>
+</h4>
+<dl class="dl-horizontal" data-ng-show="md.show==1">
+    <dt>Nome:</dt>
+    <dd>{{ obj.nome }}</dd>
+    <dt>Email:</dt>
+    <dd>{{ obj.email.0 }}</dd>
+    <dt>Cidade Natal</dt>
+    <dd>{{ obj.cidade_natal }}</dd>
+    <dt>Nascimento:</dt>
+    <dd>{{ obj.nascimento|date:'dd/MM/yy' }}</dd>
+    <dt>Endereços</dt>
+    <dl data-ng-repeat="end in obj.enderecos">
+        <dt>{{ end.nome }}</dt>
+        <dd>{{ end.rua }}</dd>
+        <dd>{{ end.cep }}</dd>
+        <dd>{{ end.bairro  }}</dd>
+        <dd>{{ end.cidade }}</dd>
+        <dd>{{ end.estado }}</dd>
+        <dd>{{ end.cep }}</dd>
+    </dl>
+    <dd>
+        <button class="btn btn-success" data-ng-click="md.show=0"><i class="icon-eye-close icon-white"></i></button>
+    </dd>
+</dl>
+<form class="form-horizontal" data-ng-show="md.edit==1">
+    <div class="control-group">
+        <label class="control-label" for="inputNome">Nome</label>
+        <div class="controls">
+            <input type="text" data-ng-model="obj.nome" id="inputNome" placeholder="Email">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">
+            E-mails
+            <button data-ng-click="addEmail()" class="btn btn-default"><i class="icon-plus"></i></button>
+        </label>
+        <div class="controls" data-ng-repeat="em in obj.email track by $index">
+            <input type="text" data-ng-model="em" placeholder="Email">
+            <button data-ng-click="obj.email.splice( $index, 1);" class="btn btn-danger"><i class="icon-minus icon-white"></i></button>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputCidadeNatal">Cidade Natal</label>
+        <div class="controls">
+            <input type="text" data-ng-model="obj.cidade_natal" id="inputCidadeNatal" placeholder="Password">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputNascimento">Nascimento</label>
+        <div class="controls">
+            <input type="text" data-ng-model="obj.nascimento" id="inputNascimento" placeholder="Password">
+        </div>
+    </div>
+    <div class="control-group">
+        <button class="submit btn" data-ng-click="md.edit=0;">Fechar</button>
+    </div>
+</form>

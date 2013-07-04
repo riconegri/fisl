@@ -1,0 +1,44 @@
+<h4>Minhas Compras</h4>
+<tabset>
+    <tab ng-repeat="tab in obj.minhas_compras" heading="{{ tab.tipo }}" active="tab.active" disabled="tab.disabled">
+        <accordion close-others="true">
+            <accordion-group data-ng-repeat="compra in tab.compras" heading="{{ compra.loja }} - {{ compra.total|currency:'R$' }}">
+                <dl class="dl-horizontal">
+                    <dt>Nota:</dt>
+                    <dd>
+                        <rating value="compra.rating" max="10" readonly="false"></rating>
+                    </dd>
+                    <dt>Em:</dt>
+                    <dd>{{ compra.criado_em|date:'dd/MM/yy' }}</dd>
+                    <dt>Endereço</dt>
+                    <dd>{{ compra.endereco }}</dd>
+                    <dt>Forma de pagamento:</dt>
+                    <dd>{{ compra.forma_pagamento }}</dd>
+                </dl>
+                <table class="table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Qtde</th>
+                        <th>Imposto</th>
+                        <th>Valor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-ng-repeat="produto in compra.items">
+                        <td>{{ produto.nome }}</td>
+                        <td>{{ produto.quantidade }} {{ produto.unidade }}</td>
+                        <td>{{ produto.quantidade * produto.imposto|currency:'R$' }}</td>
+                        <td>{{ produto.quantidade * produto.valor_unitario|currency:'R$' }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td><strong>Total:</strong></td>
+                        <td><strong>{{ compra.total|currency:'R$' }}</strong></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </accordion-group>
+        </accordion>
+    </tab>
+</tabset>

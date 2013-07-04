@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="fisl">
+<head>
+    <link href="./css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="./css/custom.css"/>
+</head>
+<body>
+{{ blocks }}
+<div class="container-fluid" ng-controller="FislCtrl">
+    <div class="row-fluid" data-ng-include="block_module"></div>
+    <div class="row-fluid">
+        <div class="span4">
+            <div class="{{ item.class }}" data-ng-repeat="item in obj.layout.esquerda">
+                <div data-ng-include src="item.file"></div>
+            </div>
+        </div>
+        <div class="span4">
+            <div class="{{ item.class }}" data-ng-repeat="item in obj.layout.centro">
+                <div data-ng-include src="item.file"></div>
+            </div>
+        </div>
+        <div class="span4">
+            <div class="{{ item.class }}" data-ng-repeat="item in obj.layout.direita">
+                <div data-ng-include src="item.file"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/angular.min.js"></script>
+<script src="./js/ui-bootstrap-tpls-0.4.0.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+{
+    "channel": {
+        "title": "Portal Oficial do Grêmio Foot-Ball Porto Alegrense",
+        "link": "http://www.gremio.net/",
+        "description": "Notícias sobre o Grêmio",
+        "language": "pt",
+        "copyright": "(c) 2006, Produzido por W3Haus. Todos os direitos reservados.",
+        "ttl": "5",
+        "pubDate": "Sat, 29 Jun 2013 13:59:00 GMT",
+        "item": [
+            {
+                "title": "Grêmio vence Caxias em jogo-treino no Olímpico",
+                "description": "Trabalho movimentou todo o plantel profissional",
+                "author": [],
+                "link": "http://www.gremio.net/news/view.aspx?id=16280&language=0&news_type_id=1",
+                "guid": "http://www.gremio.net/news/view.aspx?id=16280&language=0&news_type_id=1",
+                "category": "Geral",
+                "pubDate": "Sat, 29 Jun 2013 13:59:00 GMT"
+            },
+            {
+                "title": "Fábio Koff fala sobre saída de Luxemburgo",
+                "description": "Presidente concedeu entrevista coletiva no início da tarde deste sábado",
+                "author": [],
+                "link": "http://www.gremio.net/news/view.aspx?id=16279&language=0&news_type_id=4",
+                "guid": "http://www.gremio.net/news/view.aspx?id=16279&language=0&news_type_id=4",
+                "category": "Futebol",
+                "pubDate": "Sat, 29 Jun 2013 13:41:00 GMT"
+            },
+            {
+                "title": "Luxemburgo não é mais técnico do Grêmio",
+                "description": "Preparador-físico Antônio Mello também deixa o Clube",
+                "author": [],
+                "link": "http://www.gremio.net/news/view.aspx?id=16278&language=0&news_type_id=4",
+                "guid": "http://www.gremio.net/news/view.aspx?id=16278&language=0&news_type_id=4",
+                "category": "Futebol",
+                "pubDate": "Sat, 29 Jun 2013 12:24:00 GMT"
+            },
+            {
+                "title": "Grupo de jogadores participa de rachão no Olímpico",
+                "description": "Atividade foi realizada na tarde desta sexta-feira",
+                "author": [],
+                "link": "http://www.gremio.net/news/view.aspx?id=16277&language=0&news_type_id=4",
+                "guid": "http://www.gremio.net/news/view.aspx?id=16277&language=0&news_type_id=4",
+                "category": "Futebol",
+                "pubDate": "Fri, 28 Jun 2013 17:59:00 GMT"
+            },
+            {
+                "title": "Seis associados são contemplados com prêmios exclusivos do Tricolor",
+                "description": "Prêmios foram entregues aos sócios por Zé Roberto",
+                "author": [],
+                "link": "http://www.gremio.net/news/view.aspx?id=16276&language=0&news_type_id=1",
+                "guid": "http://www.gremio.net/news/view.aspx?id=16276&language=0&news_type_id=1",
+                "category": "Geral",
+                "pubDate": "Fri, 28 Jun 2013 15:50:00 GMT"
+            }
+        ]
+    }
+}
